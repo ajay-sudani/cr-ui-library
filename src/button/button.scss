@@ -1,0 +1,33 @@
+@import "../../styles/index.scss";
+
+$box-shadow: #272727;
+
+.buttonComponent {
+  padding: 0.3rem 0.5rem;
+  margin: 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease-out;
+  box-shadow: $box-shadow 1px 1px 1px, $box-shadow -1px -1px 1px;
+  cursor: pointer;
+  font-family: sans-serif;
+
+  &:hover {
+    box-shadow: $box-shadow 3px 3px 6px, $box-shadow -1px -1px 3px;
+  }
+
+  &.primary {
+    background-color: $primary;
+  }
+
+  &.secondary {
+    background-color: $secondary;
+  }
+
+  &.success {
+    background-color: $success;
+  }
+
+  &.default {
+    background-color: $default;
+  }
+}
